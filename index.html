@@ -7,45 +7,35 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- 
-    Necessary landmarks for this HTML file:
-    header
-    main
-    section
-    aside
-    footer
-     -->
-
-    <!-- Note: do not forget to add ARIA to HTML! This is very important!!!  -->
-
     <header>
       <div class="headline-background-cover">
-        <div class="headline-container">
-          <div class="mix-blender-image-container">
+        <div tabindex="0" class="headline-container">
+          <div class="portrait-container">
             <img
+              tabindex="0"
               class="portfolio-image"
               src="Images/Portfolio-Profile Image.png"
-              alt="My descriptive image"
+              alt="Visual representation combining programming, mathematics, and Japanese language elements"
             />
           </div>
-          <div class="details-wrapper">
+          <div tabindex="0" class="details-wrapper">
             <div class="text-enlarger-wrapper">
-              <h1>
-                <span id="japanese-text" lang="jp"
+              <h1 class="japanese-line" tabindex="0">
+                <span id="japanese-text" lang="ja"
                   >この複雑な男性という自分は。。。</span
                 >
               </h1>
-              <h1 class="author">Ori Trabelsi</h1>
+              <h1 tabindex="0" class="author">Ori Trabelsi</h1>
 
-              <h2 class="about">About Me:</h2>
-              <p class="details">
+              <h2 tabindex="0" class="about">About Me:</h2>
+              <p tabindex="0" class="details">
                 I'm a very driven and focused man. Determined to improve in all
                 aspects and to continuously grow as a human being. I'm very
                 responsible, pragmatic, thoughtful, thought-provoking, punctual,
-                respectful, rules-adherent individual. I seek to find worthy
-                meaning both in private life and at work and by utilizing this
-                conception of wortyness I grow and adapt further beyond. I love
-                computers. Always did and my ideal path in life would be to
+                respectful, rule-adherent individual. I seek to find worthy
+                meaning both in private life and at work and by utilizing my
+                conception of impactfulness I grow and adapt further beyond. I
+                love computers. Always did and my ideal path in life would be to
                 become a programmer in order to comprehend the complexities of
                 machinery and use it for my benefits, my friends' benefits, and
                 my employers' benefits. We live in a world that demands constant
@@ -64,204 +54,232 @@
     <main>
       <div class="content-container">
         <div class="work-projects">
-          <h2 class="my-projects-headline">My Projects:</h2>
-          <div class="projects-grid-container">
-            <div class="project-wrapper">
-              <img
-                class="project-image"
-                src="Images/Kiseki-Quiz/Kiseki-Quiz-Start-Phase.png"
-                alt="A quiz mini-game"
-              />
-              <img
-                class="project-image"
-                src="Images/Kiseki-Quiz/Kiseki-Quiz-Question-1.png"
-                alt="A quiz mini-game"
-              />
-              <img
-                class="project-image"
-                src="Images/Kiseki-Quiz/Kiseki-Quiz-Game-Lost.png"
-                alt="A quiz mini-game"
-              />
-              <h3 class="project-title first">
-                Kiseki (Video Game Franchise) - Trivia Quiz
-              </h3>
-              <p class="project-details">
-                <em
-                  >Note: It's not part of the
-                  <abbr title="The Odin Project">TOP</abbr> curriculum.</em
-                >
+          <section aria-labelledby="projects-heading">
+            <h2 id="projects-heading" class="my-projects-headline">
+              My Projects:
+            </h2>
+            <div class="projects-grid-container">
+              <div class="project-wrapper">
+                <img
+                  tabindex="0"
+                  class="project-image"
+                  src="Images/Kiseki-Quiz/Kiseki-Quiz-Start-Phase.png"
+                  alt="Trails/Kiseki quiz mini-game"
+                />
+                <img
+                  tabindex="0"
+                  class="project-image"
+                  src="Images/Kiseki-Quiz/Kiseki-Quiz-Question-1.png"
+                  alt=""
+                />
+                <img
+                  tabindex="0"
+                  class="project-image"
+                  src="Images/Kiseki-Quiz/Kiseki-Quiz-Game-Lost.png"
+                  alt=""
+                />
+                <h3 tabindex="0" class="project-title first">
+                  Kiseki (Video Game Franchise) - Trivia Quiz
+                </h3>
+                <p tabindex="0" class="project-details">
+                  <em
+                    >Note: It's not part of the
+                    <abbr title="The Odin Project">TOP</abbr> curriculum.</em
+                  >
 
-                <br />
-                A trivia mini game that has impressive functionality of over
-                <strong>800</strong> lines of Javascript code with 3 stages, 60
-                questions and 5 life points. It has BGM based on the situation
-                and condition of the game itself. A very exciting project and my
-                crowned jewel!
-              </p>
+                  <br />
+                  A trivia mini game that has impressive functionality of over
+                  <strong>800</strong> lines of Javascript code with 3 stages,
+                  60 questions and 5 life points. It has BGM based on the
+                  situation and condition of the game itself. A very exciting
+                  project and my crowned jewel!
+                </p>
+              </div>
+              <div class="project-wrapper">
+                <img
+                  tabindex="0"
+                  class="project-image"
+                  src="Images/Restaurant-Page/Front-Page.png"
+                  alt="Hamburger restaurant webpage"
+                />
+                <img
+                  tabindex="0"
+                  class="project-image"
+                  src="Images/Restaurant-Page/Menu-Page.png"
+                  alt=""
+                />
+                <img
+                  tabindex="0"
+                  class="project-image"
+                  src="Images/Restaurant-Page/About-Page.png"
+                  alt=""
+                />
+                <h3 tabindex="0" class="project-title second">
+                  Pseudo Hamburger Restaurant Webpage
+                </h3>
+                <p tabindex="0" class="project-details">
+                  A very elegant hamburger restaurant webpage composing of 3
+                  pages each with detailed about the fictional burgers. It has
+                  some very neat transitions and a sublimely integrated humor as
+                  well. This also served as my acquaintance with Webpack!
+                </p>
+              </div>
+              <div class="project-wrapper">
+                <img
+                  tabindex="0"
+                  class="project-image"
+                  src="Images/Landing-Page/Landing-Page-Top.png"
+                  alt="Mass Effect landing page"
+                />
+                <img
+                  tabindex="0"
+                  class="project-image"
+                  src="Images/Landing-Page/Landing-Page-Bottom.png"
+                  alt=""
+                />
+                <img
+                  tabindex="0"
+                  class="project-image"
+                  src="Images/Landing-Page/Landing-Page-Interactivity.png"
+                  alt=""
+                />
+                <h3 tabindex="0" class="project-title third">
+                  Fictional Merchandise Store For Mass Effect (Video Game..
+                  again!)
+                </h3>
+                <p tabindex="0" class="project-details">
+                  Stylish and detailed landing page about Mass Effect. Comprised
+                  solely on HTML and CSS and was one of my first projects in the
+                  TOP curriculum. Though it lacks in dynamicness I am very proud
+                  of this one!
+                </p>
+              </div>
+              <div class="project-wrapper">
+                <img
+                  tabindex="0"
+                  class="project-image"
+                  src="Images/Weather-App/Main-Menu.png"
+                  alt="Weather application"
+                />
+                <img
+                  tabindex="0"
+                  class="project-image"
+                  src="Images/Weather-App/Top-Example.png"
+                  alt=""
+                />
+                <img
+                  tabindex="0"
+                  class="project-image"
+                  src="Images/Weather-App/Bottom-Example.png"
+                  alt=""
+                />
+                <h3 tabindex="0" class="project-title fourth">
+                  Weather Application
+                </h3>
+                <p tabindex="0" class="project-details">
+                  A handy weather application if you ever need one. This project
+                  had me learn the concept of promises and asynchronous
+                  Javascript. Fact of the matter is.. It was very effective!
+                </p>
+              </div>
+              <div class="project-wrapper">
+                <img
+                  tabindex="0"
+                  class="project-image"
+                  src="Images/Hangman/Initial-Screen.png"
+                  alt="Trails/Kiseki Hangman minigame"
+                />
+                <img
+                  tabindex="0"
+                  class="project-image"
+                  src="Images/Hangman/Active-Game.png"
+                  alt=""
+                />
+                <img
+                  tabindex="0"
+                  class="project-image"
+                  src="Images/Hangman/Game-Lost.png"
+                  alt=""
+                />
+                <h3 tabindex="0" class="project-title fifth">
+                  You Guessed it! More Kiseki! This Time a Hangman Mini-Game!
+                </h3>
+                <p tabindex="0" class="project-details">
+                  <em
+                    >Note: This is also not part of the
+                    <abbr title="The Odin Project">TOP</abbr> curriculum.</em
+                  >
+                  <br />
+                  A hangman mini-game of famous quotes from
+                  <abbr title="The Legend Of Heroes/Kiseki">TLOH</abbr>. Another
+                  great practice project that was intended for me to master
+                  Javascript. Uses intermediate concepts of Javascript and
+                  various HTML elements!
+                </p>
+              </div>
+              <div class="project-wrapper">
+                <img
+                  tabindex="0"
+                  class="project-image"
+                  src="Images/Library/Initial-Page.png"
+                  alt="Library application"
+                />
+                <img
+                  tabindex="0"
+                  class="project-image"
+                  src="Images/Library/Adding-Book.png"
+                  alt=""
+                />
+                <img
+                  tabindex="0"
+                  class="project-image"
+                  src="Images/Library/Book-Added.png"
+                  alt=""
+                />
+                <h3 tabindex="0" class="project-title sixth">
+                  Library Storage
+                </h3>
+                <p tabindex="0" class="project-details">
+                  A seemingly plain library storage application but in fact it's
+                  quite handy! Encompasses an injected form and a lot of buttons
+                  with different utilities!
+                </p>
+              </div>
             </div>
-            <div class="project-wrapper">
-              <img
-                class="project-image"
-                src="Images/Restaurant-Page/Front-Page.png"
-                alt="Restaurant front page"
-              />
-              <img
-                class="project-image"
-                src="Images/Restaurant-Page/Menu-Page.png"
-                alt="Restaurant menu page"
-              />
-              <img
-                class="project-image"
-                src="Images/Restaurant-Page/About-Page.png"
-                alt="Restaurant about page"
-              />
-              <h3 class="project-title second">
-                Pseudo Hamburger Restaurant Webpage
-              </h3>
-              <p class="project-details">
-                A very elegant hamburger restaurant webpage composing of 3 pages
-                each with detailed about the fictional burgers. It has some very
-                neat transitions and a sublimely integrated humor as well. This
-                also served as my acquaintance with Webpack!
-              </p>
-            </div>
-            <div class="project-wrapper">
-              <img
-                class="project-image"
-                src="Images/Landing-Page/Landing-Page-Top.png"
-                alt="Landing page top"
-              />
-              <img
-                class="project-image"
-                src="Images/Landing-Page/Landing-Page-Bottom.png"
-                alt="Landing page bottom"
-              />
-              <img
-                class="project-image"
-                src="Images/Landing-Page/Landing-Page-Interactivity.png"
-                alt="Landing page showing interactivity"
-              />
-              <h3 class="project-title third">
-                Fictional Merchandise Store For Mass Effect (Video Game..
-                again!)
-              </h3>
-              <p class="project-details">
-                Stylish and detailed landing page about Mass Effect. Comprised
-                solely on HTML and CSS and was one of my first projects in the
-                TOP curriculum. Though it lacks in dynamicness I am very proud
-                of this one!
-              </p>
-            </div>
-            <div class="project-wrapper">
-              <img
-                class="project-image"
-                src="Images/Weather-App/Main-Menu.png"
-                alt="Weather app main menu"
-              />
-              <img
-                class="project-image"
-                src="Images/Weather-App/Top-Example.png"
-                alt="Weather app top area"
-              />
-              <img
-                class="project-image"
-                src="Images/Weather-App/Bottom-Example.png"
-                alt="Weather app bottom area"
-              />
-              <h3 class="project-title fourth">Weather Application</h3>
-              <p class="project-details">
-                A handy weather application if you ever need one. This project
-                had me learn the concept of promises and asynchronous
-                Javascript. Fact of the matter is.. It was very effective!
-              </p>
-            </div>
-            <div class="project-wrapper">
-              <img
-                class="project-image"
-                src="Images/Hangman/Initial-Screen.png"
-                alt="Hangman minigame initial screen"
-              />
-              <img
-                class="project-image"
-                src="Images/Hangman/Active-Game.png"
-                alt="Hangman minigame active game"
-              />
-              <img
-                class="project-image"
-                src="Images/Hangman/Game-Lost.png"
-                alt="Hangman mini game lost"
-              />
-              <h3 class="project-title fifth">
-                You Guessed it! More Kiseki! This Time a Hangman Mini-Game!
-              </h3>
-              <p class="project-details">
-                <em
-                  >Note: This is also not part of the
-                  <abbr title="The Odin Project">TOP</abbr> curriculum.</em
-                >
-                <br />
-                A hangman mini-game of famous quotes from
-                <abbr title="The Legend Of Heroes/Kiseki">TLOH</abbr>. Another
-                great practice project that was intended for me to master
-                Javascript. Uses intermediate concepts of Javascript and various
-                HTML elements!
-              </p>
-            </div>
-            <div class="project-wrapper">
-              <img
-                class="project-image"
-                src="Images/Library/Initial-Page.png"
-                alt="Library initial page"
-              />
-              <img
-                class="project-image"
-                src="Images/Library/Adding-Book.png"
-                alt="Library adding a book"
-              />
-              <img
-                class="project-image"
-                src="Images/Library/Book-Added.png"
-                alt="Library book added"
-              />
-              <h3 class="project-title sixth">Library Storage</h3>
-              <p class="project-details">
-                A seemingly plain library storage application but in fact it's
-                quite handy! Encompasses an injected form and a lot of buttons
-                with different utilities!
-              </p>
-            </div>
-          </div>
+          </section>
         </div>
-        <aside class="credentials">
-          <h2 class="credentials-headline">Credentials:</h2>
+        <aside class="credentials" aria-labelledby="credentials-heading">
+          <h2 id="credentials-heading" class="credentials-headline">
+            Credentials:
+          </h2>
           <div class="credential-details">
             <div class="credential-wrapper">
-              <h3 class="field">Software Engineer:</h3>
-              <h4 class="field-details">
+              <h3 tabindex="0" class="field first-field">Software Engineer:</h3>
+              <h4 tabindex="0" class="field-details">
                 Javascript, CSS, HTML, Git, Webpack, Tailwind, Bootstrap
               </h4>
             </div>
             <div class="credential-wrapper">
-              <h3 class="field">Communicator:</h3>
-              <h4 class="field-details">
+              <h3 tabindex="0" class="field">Communicator:</h3>
+              <h4 tabindex="0" class="field-details">
                 Confident, Calm, Focused, Eloquent, Honest
               </h4>
             </div>
             <div class="credential-wrapper">
-              <h3 class="field">Co-Worker's Interactor:</h3>
-              <h4 class="field-details">
+              <h3 tabindex="0" class="field">Co-Worker's Interactor:</h3>
+              <h4 tabindex="0" class="field-details">
                 Bright, Reassuring, Reliable, Amusing, Friendly
               </h4>
             </div>
             <div class="credential-wrapper">
-              <h3 class="field">Work Habits:</h3>
-              <h4 class="field-details">
+              <h3 tabindex="0" class="field">Work Habits:</h3>
+              <h4 tabindex="0" class="field-details">
                 Punctual, Dedicated, Serious, Respectful, Meaningful
               </h4>
             </div>
             <div class="credential-wrapper">
-              <h3 class="field">Employment History:</h3>
-              <h4 class="field-details">
+              <h3 tabindex="0" class="field">Employment History:</h3>
+              <h4 tabindex="0" class="field-details">
                 Currently being part-time employed in U-Test as a manual QA
                 tester. Testing websites and ensuring their functionality by
                 various test cases. I intend to use my knowledge from this field
@@ -269,8 +287,8 @@
               </h4>
             </div>
             <div class="credential-wrapper">
-              <h3 class="field">Linguistic Acquisition:</h3>
-              <h4 class="languages">
+              <h3 tabindex="0" class="field">Linguistic Acquisition:</h3>
+              <h4 tabindex="0" class="languages">
                 Hebrew - Native <br />
                 English - Fully Fluent <br />
                 Japanese - Advanced <br />
@@ -280,16 +298,16 @@
               </h4>
             </div>
             <div class="credential-wrapper">
-              <h3 class="field">Enthusiasm:</h3>
-              <h4 class="hobbies">
+              <h3 tabindex="0" class="field">Enthusiasm:</h3>
+              <h4 tabindex="0" class="hobbies">
                 Linguistics, Programming, Gaming, Geopolitics, Foreign Politics,
                 Math, Geography, History, Philosophy, Neurology, Basketball and
                 finally Swimming
               </h4>
             </div>
             <div class="credential-wrapper">
-              <h3 class="field">Even further beyond..</h3>
-              <h4 class="hobbies">
+              <h3 tabindex="0" class="field">Even further beyond..</h3>
+              <h4 tabindex="0" class="hobbies">
                 I am friendly, I tend to make people laugh, I strive for
                 cooperation with colleagues. I am striving to make myself as
                 beneficial as I possibly can for my new employers!
@@ -301,57 +319,69 @@
     </main>
     <div class="footer-background-container">
       <footer>
+        <section aria-labelledby="contact-heading"></section>
         <div class="footer-layout">
           <div class="footer-markup-wrapper">
-            <h3 class="contact-me">Contact Me:</h3>
-            <p class="contact-request">
+            <h3 id="contact-heading" tabindex="0" class="contact-me">
+              Contact Me:
+            </h3>
+            <p tabindex="0" class="contact-request">
               Please get in contact with me if you think I measure up to your
               needs in what is potentially the corporation that I will work and
               strive to make it more successful to the best of my abilities!
             </p>
-            <h3>
+            <address>
               <div class="information-container">
                 <a
                   href="https://www.google.com/maps/place/Ya'akov+Madhala+St+3,+Rehovot/@31.8855561,34.8129457,17z/data=!3m1!4b1!4m6!3m5!1s0x1502b70a2b119e1b:0xe3f1aa159ed4cae1!8m2!3d31.8855516!4d34.8155206!16s%2Fg%2F11gh4m4xsh?entry=ttu&g_ep=EgoyMDI1MTExMS4wIKXMDSoASAFQAw%3D%3D"
                   target="_blank"
+                  aria-label="View my address on Google Maps"
                 >
                   <svg
                     class="footer-icon"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                   >
-                    <title>map-marker-outline</title>
+                    <title>Map icon</title>
                     <path
                       d="M12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5M12,2A7,7 0 0,1 19,9C19,14.25 12,22 12,22C12,22 5,14.25 5,9A7,7 0 0,1 12,2M12,4A5,5 0 0,0 7,9C7,10 7,12 12,18.71C17,12 17,10 17,9A5,5 0 0,0 12,4Z"
                     />
                   </svg>
                 </a>
 
-                <span class="contact-address"
-                  >Rehovot, Ya'akov Madhala 3, Israel</span
-                >
+                <h3 class="no-margin-headline">
+                  <span tabindex="0" class="contact-address"
+                    >Rehovot, Ya'akov Madhala 3, Israel</span
+                  >
+                </h3>
               </div>
-            </h3>
-            <h3>
+
               <div class="information-container">
-                <a href="tel:+972-54-331-0394">
+                <a
+                  aria-label="Use your default device's application in order to contact me"
+                  href=""
+                >
                   <svg
                     class="footer-icon"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                   >
-                    <title>phone</title>
+                    <title>Phone icon</title>
                     <path
                       d="M19.5,22C20.33,22 21,21.33 21,20.5V17C21,16.17 20.33,15.5 19.5,15.5C18.33,15.5 17.18,15.32 16.08,14.95C15.55,14.78 14.97,14.92 14.56,15.32L13.12,16.76C10.64,15.41 8.57,13.34 7.23,10.87L8.66,9.44C9.07,9.05 9.22,8.47 9.04,7.91C8.68,6.82 8.5,5.67 8.5,4.5C8.5,3.67 7.83,3 7,3H3.5C2.67,3 2,3.67 2,4.5C2,14.15 9.85,22 19.5,22M3.5,4H7C7.28,4 7.5,4.22 7.5,4.5C7.5,5.78 7.7,7.03 8.09,8.22C8.14,8.36 8.13,8.56 7.97,8.72L6,10.68C7.65,13.91 10.07,16.33 13.31,18L15.26,16.03C15.4,15.89 15.59,15.85 15.77,15.9C16.97,16.3 18.22,16.5 19.5,16.5C19.78,16.5 20,16.72 20,17V20.5C20,20.78 19.78,21 19.5,21C10.4,21 3,13.6 3,4.5C3,4.22 3.22,4 3.5,4Z"
                     />
                   </svg>
                 </a>
-                <span class="phone-number"> 054-331-0394</span>
+                <h3 class="no-margin-headline">
+                  <span tabindex="0" class="phone-number">
+                    Currently unavailable</span
+                  >
+                </h3>
               </div>
-            </h3>
-            <h3>
+
               <div class="information-container">
                 <a
+                  aria-label="Contact me via Email"
                   href="mailto:oritrabelsi94@gmail.com?subject=Hello%20there&body=This%20is%20a%20predefined%20email%20body."
                   target="_blank"
                 >
@@ -360,17 +390,25 @@
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                   >
-                    <title>email</title>
+                    <title>Email icon</title>
                     <path
                       d="M5,5H18C19.66,5 21,6.34 21,8V17C21,18.66 19.66,20 18,20H5C3.34,20 2,18.66 2,17V8C2,6.34 3.34,5 5,5M5,6C4.5,6 4.06,6.17 3.72,6.47L11.5,11.5L19.28,6.47C18.94,6.17 18.5,6 18,6H5M11.5,12.71L3.13,7.28C3.05,7.5 3,7.75 3,8V17C3,18.1 3.9,19 5,19H18C19.1,19 20,18.1 20,17V8C20,7.75 19.95,7.5 19.87,7.28L11.5,12.71Z"
                     />
                   </svg>
                 </a>
-                <span class="email">oritrabelsi94@gmail.com</span>
+                <h3 class="no-margin-headline">
+                  <span tabindex="0" class="email"
+                    >oritrabelsi94@gmail.com</span
+                  >
+                </h3>
               </div>
-            </h3>
+            </address>
             <div class="bottom-icons-wrapper">
-              <a href="https://github.com/Programming-Idealism" target="_blank">
+              <a
+                aria-label="View my github profile page"
+                href="https://github.com/Programming-Idealism"
+                target="_blank"
+              >
                 <svg
                   class="bottom-icon github-icon"
                   xmlns="http://www.w3.org/2000/svg"
@@ -383,6 +421,7 @@
                 </svg>
               </a>
               <a
+                aria-label="View my Linkedin profile page"
                 href="https://www.linkedin.com/in/ori-%D7%90%D7%95%D7%A8%D7%99-%E3%82%AA%E3%83%AA-trabelsi-%D7%98%D7%A8%D7%91%D7%9C%D7%A1%D7%99-%E3%83%88%E3%83%A9%E3%83%99%E3%83%AB%E3%82%B7-a17659225/"
                 target="_blank"
               >
@@ -397,7 +436,11 @@
                   />
                 </svg>
               </a>
-              <a href="https://x.com/Ori_Trabelsi" target="_blank">
+              <a
+                aria-label="View my X/Twitter profile page "
+                href="https://x.com/Ori_Trabelsi"
+                target="_blank"
+              >
                 <svg
                   class="bottom-icon twitter-icon"
                   xmlns="http://www.w3.org/2000/svg"
