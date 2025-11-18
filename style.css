@@ -56,6 +56,133 @@ body {
   pointer-events: none;
 }
 
+/* Copy this onto 1500px breakpoint */
+
+/* @media (min-width: 1500px) {
+  .headline-container {
+    display: flex;
+    gap: 30px;
+    padding: 2.5rem;
+    margin: 2.5rem;
+  }
+  .details-wrapper {
+    padding: 15px;
+  }
+
+  #japanese-text {
+    margin-left: 6px;
+    margin-bottom: 8px;
+    font-size: 2.5rem;
+  }
+
+  .author {
+    font-size: 2.5rem;
+    letter-spacing: 1.5px;
+  }
+
+  .about {
+    margin-top: 15px;
+    font-size: 1.35rem;
+  }
+
+  .details {
+    margin-top: 15px;
+    font: bold 1.25rem/1.6 var(--main-font-family);
+  }
+
+  .portfolio-image {
+    width: 24vw;
+    margin-right: 5px;
+  }
+
+  .my-projects-headline,
+  .credentials-headline {
+    padding: 15px;
+    margin: 0;
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+  }
+  .projects-grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .project-image {
+    width: 437px;
+    height: 250px;
+    margin: 0 3px;
+  }
+  .project-image:first-child {
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+
+  .project-title {
+    font: bold 1.5rem verdana;
+  }
+
+  .project-details {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    margin: 25px;
+  }
+  .credential-details {
+    padding: 10px;
+  }
+
+  .credential-wrapper {
+    margin-bottom: 80px;
+  }
+
+  .field {
+    font-size: 1.3rem;
+  }
+
+  .footer-layout {
+    display: flex;
+  }
+
+  .footer-markup-wrapper {
+    width: 50vw;
+    margin: 0 auto;
+    padding: 1px 5px 50px 50px;
+    align-self: flex-start;
+  }
+
+  .footer-background-container {
+    padding: 60px;
+  }
+  .footer-image {
+    width: 320px;
+    border-radius: 20px 20px 20px 20px;
+    margin-right: 75px;
+  }
+  .contact-me {
+    font-size: 1.5rem;
+  }
+
+  .bottom-icon {
+    width: 30px;
+  }
+
+  .bottom-icons-wrapper {
+    gap: 10px;
+  }
+
+  .information-container {
+    gap: 5px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
+
+  .no-margin-headline {
+    margin: 0px;
+  }
+
+  svg {
+    width: 25px;
+  }
+} */
+
 .headline-container {
   display: flex;
   gap: 30px;
@@ -243,20 +370,10 @@ h1:focus #japanese-text {
   text-align: center;
 }
 
-.field-details {
-  color: hsl(348, 83%, 80%);
-}
-
-.languages {
-  color: hsl(348, 83%, 80%);
-}
-
+.field-details,
+.languages,
 .hobbies {
   color: hsl(348, 83%, 80%);
-}
-
-img {
-  width: 250px;
 }
 
 .footer-markup-wrapper {
@@ -383,8 +500,8 @@ address {
   }
 
   .portfolio-image {
-    width: 30vw;
-    margin-right: 5px;
+    width: 35vw;
+    margin-right: 10px;
   }
 
   .portrait-container {
@@ -425,24 +542,25 @@ address {
     font-size: 1.3rem;
   }
 
-  .content-container {
-    flex-direction: column;
+  .image-grid {
+    display: grid;
+    place-items: center;
   }
 
   .project-image {
-    width: 291px;
+    width: 55%;
     height: auto;
-    margin: 0 1px;
+    margin: 12px 1px;
   }
 
   .project-details {
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.4rem;
     margin: 20px;
   }
 
   .project-title {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .credential-details {
@@ -450,21 +568,17 @@ address {
   }
 
   .credential-wrapper {
-    margin-bottom: 20px;
+    margin: 110px 10px;
   }
 
   .field {
-    font-size: 1rem;
-    margin: 0;
-    margin-bottom: 5px;
-  }
-
-  .first-field {
-    margin-top: 10px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   .field-details {
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin: 0;
   }
 
@@ -531,7 +645,7 @@ address {
   }
 
   .portfolio-image {
-    width: 40vw;
+    width: 50vw;
     margin-right: 5px;
     margin-bottom: 10px;
   }
@@ -539,18 +653,18 @@ address {
   .about {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .details {
     margin-top: 0.2rem;
-    font: bold 1rem/1.3 var(--main-font-family);
+    font: bold 1.1rem/1.4 var(--main-font-family);
   }
 
   #japanese-text {
     display: inline-block;
     margin-left: 4px;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 
   .japanese-line {
@@ -558,7 +672,7 @@ address {
   }
 
   .author {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     letter-spacing: 1.5px;
     margin: 0.1rem;
   }
@@ -572,41 +686,59 @@ address {
     flex-direction: column;
   }
 
+  .image-grid {
+    display: grid;
+  }
+
   .project-image {
-    width: 193px;
+    width: 80%;
     height: auto;
-    margin: 0;
+    margin: 10px;
+    margin-left: 0;
+  }
+
+  .project-image:first-child {
+    margin-top: 20px;
+    margin-left: 0;
   }
 
   .project-details {
-    font-size: 0.8rem;
+    font-size: 0.95rem;
     line-height: 1.3rem;
   }
 
   .project-title {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   .credential-wrapper {
-    margin-bottom: 12px;
+    margin: 20px 10px;
+  }
+
+  .credential-wrapper {
+    margin-bottom: 0;
+  }
+
+  .credential-wrapper:last-child {
+    margin-bottom: 20px;
   }
 
   .field {
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-bottom: 5px;
   }
 
   .field-details {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     margin: 0;
   }
 
   .hobbies {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   .languages {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   .footer-layout {
@@ -654,5 +786,357 @@ address {
 
   .no-margin-headline {
     margin: 0px;
+  }
+}
+
+@media (max-width: 400px) {
+  .headline-container {
+    margin-top: 50px;
+    padding: 1rem;
+  }
+
+  .portfolio-image {
+    width: 55vw;
+  }
+
+  .about {
+    font-size: 0.9rem;
+  }
+
+  .details {
+    font: bold 0.9rem/1.2 var(--main-font-family);
+  }
+
+  .my-projects-headline,
+  .credentials-headline {
+    font-size: 1.1rem;
+  }
+
+  .project-image {
+    width: 85%;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .project-details {
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+  }
+
+  .project-title {
+    font-size: 1.1rem;
+  }
+
+  .credential-wrapper {
+    margin-bottom: 12px;
+  }
+
+  .field {
+    font-size: 0.9rem;
+  }
+
+  .field-details,
+  .hobbies,
+  .languages {
+    font-size: 0.8rem;
+  }
+
+  .contact-me {
+    font-size: 1rem;
+  }
+
+  .contact-address,
+  .phone-number,
+  .email {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .headline-container {
+    gap: 15px;
+  }
+
+  .details-wrapper {
+    padding-right: 10px;
+  }
+
+  .portfolio-image {
+    width: 30vw;
+    margin-right: 10px;
+  }
+
+  .portrait-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.2rem;
+  }
+
+  .details {
+    margin-top: 0.4rem;
+    font: bold 1.1rem/1.4 var(--main-font-family);
+  }
+
+  #japanese-text {
+    display: inline-block;
+    margin-left: 4px;
+    font-size: 1.5rem;
+  }
+
+  .japanese-line {
+    margin: 0;
+  }
+
+  .author {
+    font-size: 1.4rem;
+    letter-spacing: 1.5px;
+    margin: 0.15rem 0;
+  }
+
+  .my-projects-headline,
+  .credentials-headline {
+    font-size: 1.4rem;
+  }
+
+  .image-grid {
+    display: grid;
+    place-items: center;
+  }
+
+  .project-image {
+    width: 50%;
+    height: auto;
+    margin: 12px 1px;
+  }
+
+  .project-details {
+    font-size: 1.15rem;
+    line-height: 1.6rem;
+    margin: 20px;
+  }
+
+  .project-title {
+    font-size: 1.5rem;
+  }
+
+  .credential-details {
+    padding: 0;
+  }
+
+  .credential-wrapper {
+    margin: 120px 10px;
+  }
+
+  .field {
+    font-size: 1.3rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .field-details {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    margin: 0;
+  }
+
+  .hobbies {
+    margin: 0;
+    line-height: 1.6rem;
+  }
+
+  .languages {
+    margin: 0;
+    line-height: 1.6rem;
+  }
+
+  .footer-layout {
+    display: block;
+  }
+
+  .footer-markup-wrapper {
+    width: 55vw;
+    margin: 0 auto;
+    padding: 1px 15px 25px 50px;
+  }
+
+  .footer-background-container {
+    padding: 25px 15px 10px 15px;
+  }
+
+  .footer-image {
+    display: block;
+    width: 250px;
+    margin-right: 0;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .contact-me {
+    font-size: 1.2rem;
+  }
+
+  .bottom-icon {
+    width: 25px;
+  }
+
+  .bottom-icons-wrapper {
+    gap: 9px;
+  }
+
+  .information-container {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .no-margin-headline {
+    margin: 0px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .headline-container {
+    display: flex;
+    gap: 30px;
+    padding: 2.5rem;
+    margin: 2.5rem;
+  }
+  .details-wrapper {
+    padding: 15px;
+  }
+
+  #japanese-text {
+    margin-left: 6px;
+    margin-bottom: 8px;
+    font-size: 2.5rem;
+  }
+
+  .author {
+    font-size: 2.5rem;
+    letter-spacing: 1.5px;
+  }
+
+  .about {
+    margin-top: 15px;
+    font-size: 1.35rem;
+  }
+
+  .details {
+    margin-top: 15px;
+    font: bold 1.25rem/1.6 var(--main-font-family);
+  }
+
+  .portfolio-image {
+    width: 24vw;
+    margin-right: 5px;
+  }
+
+  .my-projects-headline,
+  .credentials-headline {
+    padding: 15px;
+    margin: 0;
+    font-size: 1.7rem;
+    letter-spacing: 1.5px;
+  }
+  .projects-grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 3px;
+  }
+
+  .image-grid:first-child {
+    margin-top: 20px;
+  }
+
+  .project-image {
+    width: 438px;
+    height: 250px;
+  }
+  .project-image:first-child {
+    margin-top: 8.5px;
+    margin-left: 10px;
+  }
+
+  .project-title {
+    font: bold 1.5rem verdana;
+  }
+
+  .project-details {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin: 15px;
+  }
+  .credential-details {
+    padding: 10px;
+  }
+
+  .credential-wrapper {
+    margin: 10px;
+    margin-bottom: 82px;
+  }
+
+  .first-field {
+    margin-top: 50px;
+  }
+
+  .field {
+    font-size: 1.3rem;
+  }
+
+  .footer-layout {
+    display: flex;
+  }
+
+  .footer-markup-wrapper {
+    width: 50vw;
+    margin: 0 auto;
+    padding: 1px 5px 50px 50px;
+    align-self: flex-start;
+  }
+
+  .footer-background-container {
+    padding: 60px;
+  }
+  .footer-image {
+    width: 335px;
+    border-radius: 20px 20px 20px 20px;
+    height: auto;
+    margin-top: 0;
+    margin: 0;
+    margin-right: 75px;
+  }
+  .contact-me {
+    font-size: 1.5rem;
+  }
+
+  .bottom-icon {
+    width: 30px;
+  }
+
+  .bottom-icons-wrapper {
+    gap: 10px;
+  }
+
+  .information-container {
+    gap: 5px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
+
+  .no-margin-headline {
+    margin: 0px;
+  }
+
+  svg {
+    width: 25px;
   }
 }
